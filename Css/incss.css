@@ -62,14 +62,16 @@ header nav ul li a.active{
         display: block;
     }
     header nav{
-        /* display: none; */
         position: absolute;
         width: 100%;
         height: calc(100vh - 50px);
         background: #333;
         top: 50px;
-        left: 0;
+        left: -100%;
         transition: 0.5s;
+    }
+    header nav.active{
+        left: 0;
     }
     header nav ul{
         display: block;
