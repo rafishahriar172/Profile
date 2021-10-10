@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: sans-serif;
 }
+/* navigation css */
 header{
     position: absolute;
     top: 0;
@@ -52,7 +53,7 @@ header nav ul li a.active{
     display: none;
 }
 
-/*nav bar*/
+/* for smaller screen */
 @media (max-width: 991px)
 {
     header{
