@@ -75,4 +75,7 @@ header nav ul li a.active{
         display: block;
         text-align: center;
     }
+    header nav ul li a{
+        border-bottom:  1px solid rgba(0,0,0,.2);
+    }
 }
