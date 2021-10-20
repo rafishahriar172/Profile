@@ -53,6 +53,62 @@ header nav ul li a.active{
     display: none;
 }
 
+.container{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+}
+.container .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .box .content{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+.container .box:hover .content{
+    top: 100px;
+    opacity: 1;
+}
+.container .box .content h3{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+.container .box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.container .box:nth-child(1) {
+    background: #4caf50;
+}
+.container .box:nth-child(2) {
+    background: #f54967;
+}
+.container .box:nth-child(3) {
+    background: #328fa5;
+}
+.container .box:nth-child(4) {
+    background: #451199;
+}
+
 /* for smaller screen */
 @media (max-width: 991px)
 {
